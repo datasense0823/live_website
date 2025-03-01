@@ -2,7 +2,6 @@ name: My Live Website
 
 on: push
 
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
