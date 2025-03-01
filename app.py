@@ -4,7 +4,7 @@ app = FastAPI()
 
 @app.get("/")  # Ensure the root path ("/") is defined
 def home():
-    return {"message": "My First Web Deployment through Github Actions"}
+    return {"message": "I am learning Development"}
 
 @app.get("/health")  # Optional health check endpoint
 def health_check():
