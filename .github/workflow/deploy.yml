@@ -1,0 +1,16 @@
+name: My Live Website
+
+on: push
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Deploy to Render
+        run: |
+          curl -X POST "https://api.render.com/deploy/srv-cv1jggt2ng1s738fkqi0?key=rOb9j9PYpP4"
